@@ -1,0 +1,38 @@
+<div class="body">
+    <div class="logInConteiner">
+        <div class="logInConteinerInner">
+            <div>
+                <label>Username: </label>
+                <input 
+                type="text"
+                [(ngModel)]="username" />        
+            </div>
+            
+            <div>
+                <label>Password: </label>
+                <input 
+                type="password" 
+                [(ngModel)]="password" />     
+            </div>
+        
+            <!-- <button 
+                class = "logIn-button"
+                (click)="authenticationService()">
+                LogIn
+            </button> -->
+
+            <button 
+                class = "logIn-button"
+                (click)="authenticationService()">
+                LogIn
+            </button>
+            
+            <!-- <button 
+                class = "deneme-button"
+                (click)="deneme()">
+                Deneme
+            </button> -->
+    
+        </div>
+    </div>
+</div>

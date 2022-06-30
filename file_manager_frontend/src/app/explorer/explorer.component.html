@@ -1,0 +1,36 @@
+<div class="top-footer">
+    <h1>File Explorer</h1>
+        <a
+            class="logOut-button"
+            (click)="logOut()">
+            LogOut
+        </a>
+</div>
+<div class="inner-body">    
+    <div class="file-conteiner">
+        <a
+            class="back-button"
+            (click)="back()">
+            &#8249;
+        </a>
+
+        <ul>
+            <li 
+            class="file-row"
+            *ngFor="let file of files">
+                <a *ngIf="file.isDirectory">
+                    <span (click)="getFileList(file.path)">
+                        {{file.name}}
+                    </span>
+                </a>
+
+                <a *ngIf="file.isFile">
+                    <span>
+                        {{file.name}}
+                    </span>
+                </a>
+            
+            </li>
+        </ul>
+    </div>
+</div>
