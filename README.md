@@ -7,11 +7,12 @@ Go to Docker file and execute this command:
 
     docker-compose up
 
-Use the fallowing informations for database connection
-Username: fmdb
-Password: pwd
-Authentication Database: fmdb
+Use the fallowing informations for database connection:
 
-Test user information
-Username: admin
-Password: admin
+- Username: fmdb
+- Password: pwd
+- Authentication Database: fmdb
+
+Test user information:
+- Username: admin
+- Password: admin
